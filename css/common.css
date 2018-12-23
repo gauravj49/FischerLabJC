@@ -1,0 +1,441 @@
+/* ------  header section ------ */
+#wrap {
+ 	width: 1024px;
+	margin: 0px auto 0px auto;
+	background-color: #FFFFFF;
+   padding-bottom: 40px;
+}
+
+.c1 {
+	clear: both;
+}
+
+#header {
+	background-color: #E0E0E0;
+	height: 40px;
+	width: 1024px;
+	padding-top: 25px;
+	font-family: 'Times New Roman', Georgia, serif;
+	color: black;	
+	text-decoration: none;	
+}
+
+#headerText {
+	width: 30%;	
+	float: right;
+	text-align: right;
+	margin-right: 70px;
+	overflow: hidden;
+	font-size: 28px;
+	padding-bottom: 5px;
+}
+
+#headerDate {
+	padding-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	width: 30%;	
+	margin-left: 70px;
+}
+	
+#headerText a {
+	/******************************************************
+	When you have the need to add in extra link groups 
+	beyond the default group (the one without the class), 
+	further groups will inherit or take on the formatting of 
+	the default group. If you have defined your default links 
+	as bold, all future link classes will be bold unless you 
+	put them back to normal using font-weight: normal. This 
+	goes the same for all other attributes.
+	*******************************************************/
+	text-decoration: none;
+	color: black;	
+}
+
+/* ------ Nav Bar ------- */
+#navbar {
+	background-color: #C0C0C0;
+	height: 30px;
+	width: 1024px;
+	position: relative; 
+	text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30;
+    overflow: hidden;
+}
+
+#navbar li {
+    float: left;
+    list-style: none;
+    display: inline;
+}
+#navbar a:link, #navbar a:visited {
+    display: block;
+    width: 155px;
+    height: 23px;
+    padding-top: 7px;
+    font-weight: bold;
+    color: #444444;
+    background-color: #C0C0C0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navbar a:hover, a:active {
+    background-color: #A0A0A0;
+}
+
+
+/* ------  Footer section ------ */
+#footer {
+	width: 1024px;
+	
+	/*****************************************************
+	Auto means: let the browser figure it out by itself.
+	The margin statement takes 1, 2, 3 or four entries 
+	(top, right, bottom, left). So in this case, when only 
+	two values are used, it means that top and bottom are 
+	the same (no margin at all), and left and right are the 
+	same (automatic margin based on width of the container 
+	and space left on both sides of it).
+	*******************************************************/
+	
+	margin: 0px auto 0px auto;
+
+	vertical-align: bottom;
+	background-color: #E0E0E0;
+	font-family: "Times New Roman",Georgia,Serif;
+	color: #000000;
+	font-size: 14px;
+	float: left;
+	height: 40px;
+}
+
+#footerContent { /* for centering the footer */
+	position: relative;
+	/*******************************************************
+	The div will be placed 50% from the top of the container,
+	means 50% of 40px (parent div)=20px
+	and then you are shifting the top marigin to 10px above.
+	The margin-top = is always -10px... i don`t know yet why? 
+	*******************************************************/
+	top: 50%;
+	margin-top: -10px ;
+	padding-left: 70px;
+	width: 50%;
+}
+
+#footerValidationIcons {
+	width: 30%;
+	float: right;
+	margin-top: -13px;
+	text-align: right;
+	padding-right: 70px;
+}
+
+#footerValidationIcons img {
+	border: 0;
+	width: 66px;
+	height: 21px;
+}
+
+
+/* ------  body section ------ */
+body {
+	background-color: #202020;
+}	
+
+.pageContainer {
+	text-decoration: none;
+	padding: 0 70px;
+}
+
+.pageContainer .pageContent {
+	height: 800px;
+}
+
+
+#body_main_header{
+	float: right;
+	font-size: 40px;
+	padding-top: 30px;	
+	color: #686868;
+	font-family: "Times New Roman",Georgia,Serif;
+	
+}
+
+.pageContainer hr {
+	background: #828282;
+	height: 1px;
+	margin-top: 60px;
+}
+
+/* no text decoration for the links. */
+.noDocLinks {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+a.noDocLinks:hover {
+	font-weight:bold; 
+	text-decoration: underline overline;	
+}
+
+.displayNoneWOpadding {
+	display: none;
+}
+
+.displayBlockWpadding {
+	display: block;
+	margin: 5px 0 5px 40px;
+	text-align: justify;
+	border: 1px solid;
+	border-color:#f3f3f3 #bbb #bbb #f3f3f3;
+	padding:10px;
+	background-color: #D8D8D8;
+}
+
+/* ------ Pagination ----- */
+
+.pagination {
+	padding: 3px;
+	margin: 3px;
+	float: right;
+}
+
+.pagination a {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #AAAADD;
+	text-decoration: none; /* no underline */
+	color: #282828;
+}
+
+.pagination a:hover, .pagination a:active {
+	border: 1px solid #C8C8C8;
+
+	color: #000;
+}
+
+.pagination span.current {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #D8D8D8;
+	font-weight: bold;
+	background-color: #787878;
+	color: #FFF;
+}
+
+.pagination span.disabled {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #DDD;
+	color: #CCC;
+}
+	
+
+/* --------------------------------------------------------
+			Index page
+-----------------------------------------------------------*/
+/* ------ Body section ------ */
+.new_title{
+	width:900px;
+	padding-left:70px;
+	font-weight:bold;
+	text-align:left;
+	font-size:32px;
+	font-family:geneva, helvetica, arial;
+    text-decoration:none;
+}
+
+.new_title a:link {
+	text-decoration:none;		
+	color: #505050;
+}
+
+.new_title a:visited {
+ 	text-decoration: none;
+	color: #505050;
+}
+.new_title a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.new_title a:hover {
+	/*text-decoration: underline overline;*/
+ 	text-decoration: none;
+	color: #787878 ;
+}
+
+td#presented_by{
+	padding-left:70px;
+	text-align:left;
+	font-size:22px;
+}
+
+td#abs_desc{
+	font-size:22px;
+	text-align:justify;
+	padding-left:70px;
+	width:600px;
+    
+}
+
+/* --------------------------------------------------------
+			Modal Box
+-----------------------------------------------------------*/
+#add {
+	width: 800px;
+}
+
+#ajax_loading { 
+	display: none; 
+	font-size: 12px; 
+	font-family: Tahoma; 
+}
+
+#simplemodal-overlay {
+	background-color:#aaaaaa; 
+	cursor:wait;
+}
+
+/* Container */
+#simplemodal-container {
+	height:500px; 
+	width:800px; 
+	background-color:#fff; 
+	border:1px solid #000000; 
+}
+
+#simplemodal-container a.modalCloseImg {
+	background:url('../images/x.png') no-repeat; 
+	width:25px; 
+	height:29px; 
+	display:inline; 
+	z-index:3200; 
+	position:absolute; 
+	top:-15px; 
+	left:-18px; 
+	cursor:pointer;
+}
+	
+#simplemodal-container #basicModalContent {
+	padding:8px;
+}
+
+/* 'Add' Button */
+#submit { 
+	margin: 4px; 
+	padding: 0px; 
+	float: left; 
+	width: 50px; 
+	background-color: white; 
+}
+
+#notification_error { 
+	color: red; 
+	height: auto; 
+	padding: 4px; 
+	text-align: center; 
+}
+
+#add_response { 
+	overflow: auto; 
+}
+
+/* Label */  
+#status label { 
+	width: 120px; 
+	padding-left: 10px; 
+
+	margin: 5px; 
+	float: left; 
+	text-align: left; 
+}  
+
+#status br { 
+	clear: left; 
+} 
+
+#status input { 
+	width: 300px;
+} 
+
+#status .big { 
+	width: 50px;
+}
+
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: pointer;
+	cursor: hand;
+}
+
+
+/* --------------------------------------------------------
+   Styling Scrollbars to Match Your UI Design 
+/*-----------------------------------------------------------*/
+.container {
+      width: 400px;
+      height: 300px;
+      overflow: scroll; /* showing scrollbars */
+}
+
+::-webkit-scrollbar {
+      width: 10px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+      /*background-color: #b46868;*/
+      background-color: #888888 ;
+} /* the new scrollbar will have a flat appearance with the set background color */
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+} /* this will style the thumb, ignoring the track */
+::-webkit-scrollbar-button {
+      background-color: #383838;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+body {
+    scrollbar-face-color: #686868;
+}
+
+.jspTrack
+{
+    background: #888888; /* changed from #dde */
+    position: relative;
+}
+.jspDrag
+{
+    background: rgba(0,0,0,0.2); /* changed from #bbd */
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------
+   "Default Text" Fields Using Simple jQuery Trick
+   http://www.dailycoding.com/Posts/default_text_fields_using_simple_jquery_trick.aspx
+/*-----------------------------------------------------------*/
+.defaultText { width: 300px; }
+.defaultTextActive { color: #a1a1a1; font-style: italic; }
+
+/* --------------------------------------------------------
+   Make the dropdown box of fix width
+   http://stackoverflow.com/questions/1116395/how-to-handle-long-text-in-dropdownlist-control-in-asp-net
+/*-----------------------------------------------------------*/
+select {width: 150px;}

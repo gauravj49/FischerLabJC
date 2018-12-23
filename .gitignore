@@ -1,0 +1,14 @@
+# Ignore all python's byte code files (python compiled code file )
+*.pyc
+
+# Ignore the actual user, password and database information file
+# conf/JournalClub_original.conf
+*_original.*
+*/*_original.*
+scripts/original
+*.*~
+*/*.*~
+docs/
+
+
+
